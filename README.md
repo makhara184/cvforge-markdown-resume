@@ -7,3 +7,8 @@ Open `index.html` in any browser, edit the Markdown on the left, and click **Exp
 
 ## License
 MIT License — see [LICENSE](LICENSE).
+
+
+## Studio Makhara browser app
+
+Open the [installable browser app](./app/) for a portable companion to this project. Data stays in local browser storage; see [app/README.md](./app/README.md) for setup and limits.
