@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CVForge — Live Markdown-to-ATS Resume Builder</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="bar no-print">
+    <strong>CVForge</strong>
+    <div class="bar-controls">
+      <span id="wordCount">0 words</span>
+      <select id="themeSelect">
+        <option value="executive">Theme: Executive</option>
+        <option value="minimal">Theme: Minimal</option>
+        <option value="modern">Theme: Modern</option>
+      </select>
+      <button onclick="window.print()">Export PDF</button>
+    </div>
+  </header>
+  <main class="split">
+    <section class="pane no-print">
+      <textarea id="mdInput" spellcheck="true"></textarea>
+    </section>
+    <section class="pane preview-wrap">
+      <article id="preview" class="resume executive"></article>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
